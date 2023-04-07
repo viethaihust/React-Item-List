@@ -12,7 +12,9 @@ function App() {
           <h2>Danh mục sản phẩm</h2>
           <div className='underline'></div>
         </div>
-        <Categories categories={categories} />
+        <div className='sidebar'>
+          <Categories categories={categories} />
+        </div>
       </section>
     </main>
   )
