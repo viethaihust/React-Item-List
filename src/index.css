@@ -18,6 +18,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+img {
+  width: 5rem;
+  height: auto;
+}
+
 .section {
   width: 90vw;
   margin: 0 auto;
@@ -26,6 +31,49 @@ code {
 
 .menu {
   padding: 5rem 0;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 12rem;
+  background: var(--clr-black);
+  z-index: 99;
+}
+
+.sidebar .btn-container {
+  margin-top: 20px;
+  height: 100%;
+}
+
+.sidebar button {
+  position: relative;
+  padding: 16px 0;
+  margin: 0 10px;
+  width: calc(100% - 20px);
+  background-color: transparent;
+  color: var(--clr-white);
+  border: none;
+  text-transform: capitalize;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.sidebar button:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.center-section {
+  position: absolute;
+  top: 0;
+  left: 12rem;
+  width: calc(100% - 12rem);
 }
 
 .title {
@@ -42,38 +90,7 @@ code {
   margin-right: auto;
 }
 
-.sidebar{
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 12rem;
-  background: var(--clr-black);
-  z-index: 99;
-}
-
-.sidebar .btn-container{
-  margin-top: 20px;
-  height: 100%;
-}
-
-.sidebar button{
-  position: relative;
-  padding: 16px 0;
-  margin: 0 10px;
-  width: calc(100% - 20px);
-  background-color: transparent;
-  color: var(--clr-white);
-  border: none;
-  text-transform: capitalize;
-  border-radius: 4px;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.sidebar button:hover{
-  background-color: var(--clr-white);
-  color: var(--clr-black);
-  cursor: pointer;
-  transition: all 0.4s ease;
+.item-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
