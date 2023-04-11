@@ -1,9 +1,12 @@
 :root {
   --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-5: hsl(210, 22%, 49%);
   --clr-gold: #c59d5f;
-  --max-width: 1170px;
   --clr-black: #11101D;
   --clr-white: #fff;
+
+  --max-width: 1170px;
+  --radius: 0.25rem;
 }
 
 body {
@@ -16,11 +19,6 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-img {
-  width: 5rem;
-  height: auto;
 }
 
 .section {
@@ -93,4 +91,37 @@ img {
 .item-section {
   display: grid;
   grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+
+.item-list {
+  display: flex;
+  margin: 2rem;
+}
+
+.photo {
+  object-fit: cover;
+  border: 0.2rem solid var(--clr-gold);
+  border-radius: var(--radius);
+  display: block;
+  max-width: 10rem;
+  float: left;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted var(--clr-grey-5);
+}
+
+.item-info h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: var(--clr-gold);
+  margin-left: 3rem;
 }
